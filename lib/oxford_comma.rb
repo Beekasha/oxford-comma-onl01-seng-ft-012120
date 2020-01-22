@@ -1,5 +1,6 @@
 def oxford_comma(array)
   last_ele = array[-1]
+  new_last_ele = "and " + last_ele
   
   
   if array.size < 2
