@@ -1,13 +1,13 @@
 def oxford_comma(array)
   last_ele = array[-1]
-  new_last_ele = "and " + last_ele
+  new_last_ele = "and " + last_ele #shovel this into a new array
   
   
   if array.size < 2
-    return array.join("")
+    return array.join("") #take care of 1 element
   elsif array.size == 2
-    return array.join(" and ")
-  else
+    return array.join(" and ") #takes care of 2 elements
+  else # >2 elements
     
     new_array = array.map { |ele| ele + ", "}
     new_array.pop
@@ -15,8 +15,4 @@ def oxford_comma(array)
     new_array.join("")
     
   end
-  
-    
-    
-
 end
