@@ -10,7 +10,7 @@ def oxford_comma(array)
     new_array = array.map { |ele| ele + ", "}
     new_array.pop
     new_array << new_last_ele
-    new_array.to_s
+    new_array
     
   end
   
