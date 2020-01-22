@@ -3,8 +3,10 @@ def oxford_comma(array)
   new_last_ele = "and " + last_ele
   
   
-  if array.size < 3
+  if array.size < 2
     return array.join("")
+  elsif array.size == 2
+    return array.join(" and ")
   else
     
     new_array = array.map { |ele| ele + ", "}
